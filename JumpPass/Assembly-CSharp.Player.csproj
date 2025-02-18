@@ -60,9 +60,13 @@
   <ItemGroup>
     <Compile Include="Assets\Jump Pass\Scripts\Camera\Paralax.cs" />
     <Compile Include="Assets\Jump Pass\Scripts\Gameplay\RandomColorOverlay.cs" />
+    <Compile Include="Assets\Jump Pass\Ad\CebianlanManager.cs" />
+    <Compile Include="Assets\Jump Pass\Ad\Ad.cs" />
+    <Compile Include="Assets\Jump Pass\Ad\AdManager.cs" />
     <Compile Include="Assets\Jump Pass\Scripts\Other\Donate.cs" />
     <Compile Include="Assets\Jump Pass\Scripts\Other\Utilities.cs" />
     <Compile Include="Assets\Jump Pass\Scripts\Gameplay\GameManager.cs" />
+    <Compile Include="Assets\Jump Pass\Ad\CountDown.cs" />
     <Compile Include="Assets\Jump Pass\Scripts\Player\CoinCollector.cs" />
     <Compile Include="Assets\Jump Pass\Scripts\Player\Player.cs" />
     <Compile Include="Assets\Jump Pass\Scripts\MainMenu\MainMenu.cs" />
@@ -70,10 +74,6 @@
     <Compile Include="Assets\Jump Pass\Scripts\Gameplay\Platform.cs" />
     <Compile Include="Assets\Jump Pass\Scripts\Other\Rotator2D.cs" />
     <Compile Include="Assets\Jump Pass\Scripts\MainMenu\Shop.cs" />
-    <Compile Include="Assets\Jump Pass\Ad\CountDown.cs" />
-    <Compile Include="Assets\Jump Pass\Ad\AdManager.cs" />
-    <Compile Include="Assets\Jump Pass\Ad\CebianlanManager.cs" />
-    <Compile Include="Assets\Jump Pass\Ad\Ad.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -375,12 +375,12 @@
       <HintPath>D:\Unity Hub\Editor\2021.3.41f1c1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\Variations\mono\Managed\UnityEngine.XRModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
-      <HintPath>Library\PackageCache\com.unity.visualscripting@1.9.4\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="ttsdk">
       <HintPath>Assets\Jump Pass\Plugins\ByteGame\com.bytedance.starksdk\ttsdk.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
+      <HintPath>Library\PackageCache\com.unity.visualscripting@1.9.4\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="netstandard">
@@ -897,6 +897,10 @@
       <Project>{95A8BF58-A904-1017-7672-8AB0C88523DB}</Project>
       <Name>Unity.VisualScripting.Flow.Player</Name>
     </ProjectReference>
+    <ProjectReference Include="TTLitJson.Player.csproj">
+      <Project>{20B0E7B9-672E-C752-48FB-1EC966C38D81}</Project>
+      <Name>TTLitJson.Player</Name>
+    </ProjectReference>
     <ProjectReference Include="UnityEngine.UI.Player.csproj">
       <Project>{723BAE7A-916A-DD78-50C0-5E9300F63DB9}</Project>
       <Name>UnityEngine.UI.Player</Name>
@@ -904,6 +908,10 @@
     <ProjectReference Include="Unity.VisualScripting.Core.Player.csproj">
       <Project>{5A3CA8F1-E330-5295-AD22-2D38698B75B1}</Project>
       <Name>Unity.VisualScripting.Core.Player</Name>
+    </ProjectReference>
+    <ProjectReference Include="TTWebGL.Player.csproj">
+      <Project>{0FBFB6CA-FB7E-ADCB-EC78-5670C98B5013}</Project>
+      <Name>TTWebGL.Player</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Mathematics.Player.csproj">
       <Project>{322294E5-4398-9B67-7836-1D69687007EA}</Project>
@@ -932,14 +940,6 @@
     <ProjectReference Include="Unity.VisualScripting.State.Player.csproj">
       <Project>{68CD526F-D3C4-9E19-46A2-E9A729F7EF87}</Project>
       <Name>Unity.VisualScripting.State.Player</Name>
-    </ProjectReference>
-    <ProjectReference Include="TTLitJson.Player.csproj">
-      <Project>{20B0E7B9-672E-C752-48FB-1EC966C38D81}</Project>
-      <Name>TTLitJson.Player</Name>
-    </ProjectReference>
-    <ProjectReference Include="TTWebGL.Player.csproj">
-      <Project>{0FBFB6CA-FB7E-ADCB-EC78-5670C98B5013}</Project>
-      <Name>TTWebGL.Player</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

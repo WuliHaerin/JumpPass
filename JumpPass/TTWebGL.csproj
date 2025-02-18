@@ -58,21 +58,21 @@
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Jump Pass\Plugins\ByteGame\com.bytedance.starksdk\WebGL\FileSystem\TTFileSystemManagerDefault.cs" />
-    <Compile Include="Assets\Jump Pass\Plugins\ByteGame\com.bytedance.starksdk\WebGL\Network\TTUDPSocketHandler.cs" />
-    <Compile Include="Assets\Jump Pass\Plugins\ByteGame\com.bytedance.starksdk\WebGL\TTCallbackHandler.cs" />
     <Compile Include="Assets\Jump Pass\Plugins\ByteGame\com.bytedance.starksdk\WebGL\TTStorageManager.cs" />
-    <Compile Include="Assets\Jump Pass\Plugins\ByteGame\com.bytedance.starksdk\WebGL\Input\Input.cs" />
-    <Compile Include="Assets\Jump Pass\Plugins\ByteGame\com.bytedance.starksdk\WebGL\FileSystem\TTFileSystemManager.cs" />
-    <Compile Include="Assets\Jump Pass\Plugins\ByteGame\com.bytedance.starksdk\WebGL\TTModel.cs" />
-    <Compile Include="Assets\Jump Pass\Plugins\ByteGame\com.bytedance.starksdk\WebGL\TTWebGLInterface.cs" />
-    <Compile Include="Assets\Jump Pass\Plugins\ByteGame\com.bytedance.starksdk\WebGL\AssetBundle\TTAssetBundleExtensions.cs" />
-    <Compile Include="Assets\Jump Pass\Plugins\ByteGame\com.bytedance.starksdk\WebGL\Compatibility\UnityCacheCompatibility.cs" />
-    <Compile Include="Assets\Jump Pass\Plugins\ByteGame\com.bytedance.starksdk\WebGL\AssetBundle\DownloadHandlerTTAssetBundle.cs" />
     <Compile Include="Assets\Jump Pass\Plugins\ByteGame\com.bytedance.starksdk\WebGL\FileSystem\TTFileSystemManagerWebGL.cs" />
-    <Compile Include="Assets\Jump Pass\Plugins\ByteGame\com.bytedance.starksdk\WebGL\AssetBundle\TTAssetBundleRequest.cs" />
+    <Compile Include="Assets\Jump Pass\Plugins\ByteGame\com.bytedance.starksdk\WebGL\AssetBundle\DownloadHandlerTTAssetBundle.cs" />
     <Compile Include="Assets\Jump Pass\Plugins\ByteGame\com.bytedance.starksdk\WebGL\AssetBundle\TTAssetBundle.cs" />
+    <Compile Include="Assets\Jump Pass\Plugins\ByteGame\com.bytedance.starksdk\WebGL\FileSystem\TTFileSystemManagerDefault.cs" />
+    <Compile Include="Assets\Jump Pass\Plugins\ByteGame\com.bytedance.starksdk\WebGL\AssetBundle\TTAssetBundleExtensions.cs" />
+    <Compile Include="Assets\Jump Pass\Plugins\ByteGame\com.bytedance.starksdk\WebGL\AssetBundle\TTAssetBundleRequest.cs" />
+    <Compile Include="Assets\Jump Pass\Plugins\ByteGame\com.bytedance.starksdk\WebGL\TTWebGLInterface.cs" />
+    <Compile Include="Assets\Jump Pass\Plugins\ByteGame\com.bytedance.starksdk\WebGL\TTCallbackHandler.cs" />
+    <Compile Include="Assets\Jump Pass\Plugins\ByteGame\com.bytedance.starksdk\WebGL\TTModel.cs" />
+    <Compile Include="Assets\Jump Pass\Plugins\ByteGame\com.bytedance.starksdk\WebGL\Compatibility\UnityCacheCompatibility.cs" />
+    <Compile Include="Assets\Jump Pass\Plugins\ByteGame\com.bytedance.starksdk\WebGL\FileSystem\TTFileSystemManager.cs" />
+    <Compile Include="Assets\Jump Pass\Plugins\ByteGame\com.bytedance.starksdk\WebGL\Input\Input.cs" />
     <Compile Include="Assets\Jump Pass\Plugins\ByteGame\com.bytedance.starksdk\WebGL\Compatibility\UnityWebRequestCompatibility.cs" />
+    <Compile Include="Assets\Jump Pass\Plugins\ByteGame\com.bytedance.starksdk\WebGL\Network\TTUDPSocketHandler.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Jump Pass\Plugins\ByteGame\com.bytedance.starksdk\WebGL\AssetBundle\TTAssetBundleProviders.cs.txt" />
@@ -435,6 +435,18 @@
       <HintPath>Library\PackageCache\com.unity.collab-proxy@2.4.3\Lib\Editor\PlasticSCM\Unity.Plastic.Newtonsoft.Json.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="starksdk_tools">
+      <HintPath>Assets\Jump Pass\Plugins\ByteGame\com.bytedance.starksdk.unitytools\Editor\starksdk_tools.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="bgdt">
+      <HintPath>Assets\Jump Pass\Plugins\ByteGame\com.bytedance.bgdt\Editor\bgdt.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="ttsdk">
+      <HintPath>Assets\Jump Pass\Plugins\ByteGame\com.bytedance.starksdk\ttsdk.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Unity.Plastic.Antlr3.Runtime">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@2.4.3\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
       <Private>False</Private>
@@ -461,18 +473,6 @@
     </Reference>
     <Reference Include="unityplastic">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@2.4.3\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="starksdk_tools">
-      <HintPath>Assets\Jump Pass\Plugins\ByteGame\com.bytedance.starksdk.unitytools\Editor\starksdk_tools.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="bgdt">
-      <HintPath>Assets\Jump Pass\Plugins\ByteGame\com.bytedance.bgdt\Editor\bgdt.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="ttsdk">
-      <HintPath>Assets\Jump Pass\Plugins\ByteGame\com.bytedance.starksdk\ttsdk.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">

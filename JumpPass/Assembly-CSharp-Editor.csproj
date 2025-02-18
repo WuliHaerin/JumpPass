@@ -430,6 +430,18 @@
       <HintPath>Library\PackageCache\com.unity.collab-proxy@2.4.3\Lib\Editor\PlasticSCM\Unity.Plastic.Newtonsoft.Json.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="starksdk_tools">
+      <HintPath>Assets\Jump Pass\Plugins\ByteGame\com.bytedance.starksdk.unitytools\Editor\starksdk_tools.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="bgdt">
+      <HintPath>Assets\Jump Pass\Plugins\ByteGame\com.bytedance.bgdt\Editor\bgdt.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="ttsdk">
+      <HintPath>Assets\Jump Pass\Plugins\ByteGame\com.bytedance.starksdk\ttsdk.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Unity.Plastic.Antlr3.Runtime">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@2.4.3\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
       <Private>False</Private>
@@ -456,18 +468,6 @@
     </Reference>
     <Reference Include="unityplastic">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@2.4.3\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="starksdk_tools">
-      <HintPath>Assets\Jump Pass\Plugins\ByteGame\com.bytedance.starksdk.unitytools\Editor\starksdk_tools.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="bgdt">
-      <HintPath>Assets\Jump Pass\Plugins\ByteGame\com.bytedance.bgdt\Editor\bgdt.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="ttsdk">
-      <HintPath>Assets\Jump Pass\Plugins\ByteGame\com.bytedance.starksdk\ttsdk.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="nunit.framework">
@@ -1100,9 +1100,9 @@
       <Project>{4FA2C7F2-352A-9B34-0B9B-51B672692CBB}</Project>
       <Name>Unity.Rider.Editor</Name>
     </ProjectReference>
-    <ProjectReference Include="Unity.InternalAPIEditorBridge.001.csproj">
-      <Project>{B0833AB1-D903-81DF-28AD-7C639185BF97}</Project>
-      <Name>Unity.InternalAPIEditorBridge.001</Name>
+    <ProjectReference Include="TTLitJson.csproj">
+      <Project>{317EDC80-A020-9CC8-E50D-64AF2744D92F}</Project>
+      <Name>TTLitJson</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.UI.csproj">
       <Project>{FD8A1D3B-DC7C-C744-EC1D-F2CFF55B74D6}</Project>
@@ -1112,9 +1112,17 @@
       <Project>{288208D8-D557-1577-E01E-C2E245F51896}</Project>
       <Name>Unity.2D.Tilemap.Extras.Editor</Name>
     </ProjectReference>
+    <ProjectReference Include="Unity.InternalAPIEditorBridge.001.csproj">
+      <Project>{B0833AB1-D903-81DF-28AD-7C639185BF97}</Project>
+      <Name>Unity.InternalAPIEditorBridge.001</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.VisualScripting.Core.csproj">
       <Project>{CC515732-9253-F7CE-E6BB-72BA4044E280}</Project>
       <Name>Unity.VisualScripting.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="TTWebGL.csproj">
+      <Project>{C57106C1-E1F3-36A2-D0CF-2D36B9327A8B}</Project>
+      <Name>TTWebGL</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Mathematics.csproj">
       <Project>{DF22D22E-65AF-000F-069F-7C884CB52B4B}</Project>
@@ -1131,6 +1139,10 @@
     <ProjectReference Include="Unity.2D.Aseprite.Editor.csproj">
       <Project>{20F20990-DB40-A12E-5EB4-1DD47D3C57AE}</Project>
       <Name>Unity.2D.Aseprite.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="com.bytedance.ttsdk-editor.csproj">
+      <Project>{7B309592-CAC5-F15C-4E7A-7219CD2210AD}</Project>
+      <Name>com.bytedance.ttsdk-editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.VisualScripting.Shared.Editor.csproj">
       <Project>{827CFD1E-5EC9-5799-F618-785CB9A9CC29}</Project>
@@ -1175,18 +1187,6 @@
     <ProjectReference Include="Unity.VisualScripting.State.csproj">
       <Project>{5F3203CA-B59C-92D3-D0E2-565EF01E49EE}</Project>
       <Name>Unity.VisualScripting.State</Name>
-    </ProjectReference>
-    <ProjectReference Include="TTLitJson.csproj">
-      <Project>{317EDC80-A020-9CC8-E50D-64AF2744D92F}</Project>
-      <Name>TTLitJson</Name>
-    </ProjectReference>
-    <ProjectReference Include="TTWebGL.csproj">
-      <Project>{C57106C1-E1F3-36A2-D0CF-2D36B9327A8B}</Project>
-      <Name>TTWebGL</Name>
-    </ProjectReference>
-    <ProjectReference Include="com.bytedance.ttsdk-editor.csproj">
-      <Project>{7B309592-CAC5-F15C-4E7A-7219CD2210AD}</Project>
-      <Name>com.bytedance.ttsdk-editor</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

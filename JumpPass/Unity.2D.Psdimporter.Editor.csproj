@@ -449,6 +449,18 @@
       <HintPath>Library\PackageCache\com.unity.collab-proxy@2.4.3\Lib\Editor\PlasticSCM\Unity.Plastic.Newtonsoft.Json.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="starksdk_tools">
+      <HintPath>Assets\Jump Pass\Plugins\ByteGame\com.bytedance.starksdk.unitytools\Editor\starksdk_tools.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="bgdt">
+      <HintPath>Assets\Jump Pass\Plugins\ByteGame\com.bytedance.bgdt\Editor\bgdt.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="ttsdk">
+      <HintPath>Assets\Jump Pass\Plugins\ByteGame\com.bytedance.starksdk\ttsdk.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Unity.Plastic.Antlr3.Runtime">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@2.4.3\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
       <Private>False</Private>
@@ -475,18 +487,6 @@
     </Reference>
     <Reference Include="unityplastic">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@2.4.3\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="starksdk_tools">
-      <HintPath>Assets\Jump Pass\Plugins\ByteGame\com.bytedance.starksdk.unitytools\Editor\starksdk_tools.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="bgdt">
-      <HintPath>Assets\Jump Pass\Plugins\ByteGame\com.bytedance.bgdt\Editor\bgdt.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="ttsdk">
-      <HintPath>Assets\Jump Pass\Plugins\ByteGame\com.bytedance.starksdk\ttsdk.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="nunit.framework">
