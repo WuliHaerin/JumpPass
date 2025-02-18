@@ -1,0 +1,13 @@
+<item>
+  <ConfigVersion value="1" />
+  <Time value="2025/2/17 18:36:35" />
+  <ExpTotal value="3" />
+  <Gem value="1000" />
+  <Gold value="0" />
+  <Elixir value="100" />
+  <Shield value="0" />
+  <Building Type="0" Level="2" TilePosX="22" TilePosY="22" InUpgrade="False" UpgradeCompleted="False" UpgradeTimeLeft="0" Production="0" />
+  <Building Type="1" Level="1" TilePosX="27" TilePosY="23" InUpgrade="False" UpgradeCompleted="False" UpgradeTimeLeft="0" Production="0" />
+  <Building Type="3" Level="0" TilePosX="25" TilePosY="19" InUpgrade="True" UpgradeCompleted="True" UpgradeTimeLeft="0" Production="0" />
+  <Building Type="5" Level="0" TilePosX="30" TilePosY="20" InUpgrade="True" UpgradeCompleted="False" UpgradeTimeLeft="10" Production="0" />
+</item>
